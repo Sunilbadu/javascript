@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bulb{
+    margin: 50px 50px;
+    
+    height: 345px;
+    width: 345px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+.bulb-container{
+    height: 345px;
+    width: 345px;
+    background-color: black;
+}
+
