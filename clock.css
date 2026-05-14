@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.clock{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 275px;
+    height: 100px;
+    width: 500px;
+    border: 10px solid silver;
+    background-color: black;
+    border-radius: 20px;
+}
+.off{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 275px;
+    height: 100px;
+    width: 500px;
+    border: 10px solid silver;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.ele{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    color: white;
+}
+.ele{
+ color: white;
+}
+.xx{
+    visibility: hidden;
+}
