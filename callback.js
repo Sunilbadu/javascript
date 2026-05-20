@@ -8,3 +8,14 @@ function sayGoodbye() {
 }
 
 greet("Sunil", sayGoodbye);
+
+function calculate(a, b, callback) {
+  let result = a + b;
+  callback(result);
+}
+
+function displayResult(value) {
+  console.log("The result is: " + value);
+}
+
+calculate(5, 7, displayResult);
