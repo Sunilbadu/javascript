@@ -1,26 +1,39 @@
 let p1 = new Promise((resolve,reject)=>{
     setTimeout(() => {
-        console.log("resilved after 2 sec")
+        console.log("resolved after 2 sec")
         resolve(56)
     }, 2000);
 })
 p1.then((value)=>{
-    console.log(value)
     let p2 = new Promise((resolve , reject)=>{
         setTimeout(()=>{
-             resolve("promise2")
+            console.log(value)
+             resolve("promise 2")
         },2000)
        
     })
     return p2
 }).then((value)=>{
-    console.log("we are done "+value)
     let q = new Promise((resolve, reject)=>{
-            setInterval(()=>{
+        setTimeout(()=>{
+                console.log("we are done "+value)
                 resolve(55)
             },2000)
-            return q   //error occureed
+     
     })
+    return q
 }).then((value)=>{
-    console.log("we ARE PAKKA DONE with the final value of "+value)
+    let y= new Promise((resolve , reject)=>{
+         setTimeout(()=>{
+        console.log("we ARE PAKKA DONE with the final value of "+value)
+        reject(new Error(404))
+    },2000)
+    })
+   return y
+    
+}).catch((value)=>{
+
+
+        console.log(value)
+  
 })
