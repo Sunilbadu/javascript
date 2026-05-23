@@ -36,6 +36,7 @@ let p3 = new Promise((resolve,reject)=>{
 // x.then((value)=>{
 //     console.log(value)
 // })
+
 let x = Promise.any([p1,p2,p3])
 x.then((value)=>{
     console.log(value)
